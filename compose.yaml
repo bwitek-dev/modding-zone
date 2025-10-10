@@ -6,7 +6,7 @@ services:
       - '5005:5005'
     environment:
       - DB_URL=test-url
-      - MAVEN_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+      - spring.jvm.args=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
 #    depends_on:
 #      - 'postgres'
 #  postgres:

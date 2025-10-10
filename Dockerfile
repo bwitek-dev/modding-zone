@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM amazoncorretto:17.0.16-alpine
 WORKDIR ./app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
